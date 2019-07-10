@@ -1,0 +1,23 @@
+@model MvcWizardCustomization.Models.ReportDesignerModel
+
+<!--region PredefinedSettings-->
+<script type="text/javascript">
+    function beforeInit(args) {
+        // Customize the default page size and orintation.
+        args.state.pageSetup.paperKind = "A4";
+        args.state.pageSetup.landscape = true;
+    }
+
+    function CustomizeWizard(s, e) {
+        if (e.Type === "ReportWizard") {
+            e.Wizard.events.addHandler("beforeInitialize", beforeInit)
+        }
+    }
+</script>
+
+@Html.DevExpress().ReportDesigner(settings => {
+    settings.Name = "ReportDesigner1";
+    settings.DataSources.Add(Model.DataSource.Key, Model.DataSource.Value);
+    settings.ClientSideEvents.CustomizeWizard = "CustomizeWizard";
+}).Bind(Model.Report).GetHtml()
+<!--endregion PredefinedSettings-->

@@ -1,0 +1,13 @@
+{
+  "name": "AspNetCoreWizardCustomization",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "devextreme": "19.1-next",
+    "@devexpress/analytics-core": "19.1-next",
+    "devexpress-reporting": "19.1-next",
+    "jquery-ui-dist": "^1.12.1"
+  }
+}

@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    function afterSectionInit(args) {
+        if (args.sectionId === DevExpress.Reporting.Designer.Wizard.FullscreenReportWizardSectionId.SelectDataMembersPage_Members) {
+            args.section.selectAllDataFields();
+
+            // Uncomment these lines to select specific data fields.
+            //args.section.selectDataField("Categories.CategoryID")
+            //args.section.selectDataField("Categories.CategoryName")
+
+            // Uncomment this line to select the 'Products' table's fields.
+            //args.section.selectDataFields("Products")
+        }
+    }
+    function afterPageInit(args) {
+        if (args.pageId === DevExpress.Reporting.Designer.Wizard.FullscreenReportWizardPageId.DefineReportLayoutPage) {
+            args.page.events.addHandler("afterSectionInitialize", afterSectionInit);
+        }
+    }
+
+    function CustomizeWizard(s, e) {
+        if (e.Type === "ReportWizard") {
+            e.Wizard.events.addHandler("afterPageInitialize", afterPageInit)
+        }
+    }
+</script>
+
+@(Html.DevExpress().ReportDesigner("reportDesigner")
+    .Height("1000px")
+    .DataSources(dataSources => { dataSources.Add(Model.DataSource.Key, Model.DataSource.Value); })
+    .ClientSideEvents(x => x.CustomizeWizard("CustomizeWizard"))
+    .Bind(Model.Report))

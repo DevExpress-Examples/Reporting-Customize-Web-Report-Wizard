@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="WebFormsWizardCustomization.Global_asax" Language="C#" %>

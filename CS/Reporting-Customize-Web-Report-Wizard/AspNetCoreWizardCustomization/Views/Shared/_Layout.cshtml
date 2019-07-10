@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AspNetCoreWizardCustomization</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/node_modules/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment include="Development">
+        <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="~/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+
+    <link href="~/node_modules/jquery-ui-dist/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/node_modules/devextreme/dist/css/dx.common.css" rel="stylesheet" />
+    <link href="~/node_modules/devextreme/dist/css/dx.light.css" rel="stylesheet" />
+    <link href="~/node_modules/@@devexpress/analytics-core/dist/css/dx-analytics.common.css" rel="stylesheet" />
+    <link href="~/node_modules/@@devexpress/analytics-core/dist/css/dx-analytics.light.css" rel="stylesheet" />
+    <link href="~/node_modules/@@devexpress/analytics-core/dist/css/dx-querybuilder.css" rel="stylesheet" />
+    <link href="~/node_modules/devexpress-reporting/dist/css/dx-reportdesigner.css" rel="stylesheet" />
+    <link href="~/node_modules/devexpress-reporting/dist/css/dx-webdocumentviewer.css" rel="stylesheet" />
+
+    <!-- 3rd-party dependencies -->
+    <script src="~/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+    <script src="~/node_modules/knockout/build/output/knockout-latest.js"></script>
+    <script src="~/node_modules/ace-builds/src-min-noconflict/ace.js"></script>
+    <script src="~/node_modules/ace-builds/src-min-noconflict/ext-language_tools.js"></script>
+    <script src="~/node_modules/ace-builds/src-min-noconflict/theme-dreamweaver.js"></script>
+    <script src="~/node_modules/ace-builds/src-min-noconflict/theme-ambiance.js"></script>
+    <script src="~/node_modules/ace-builds/src-min-noconflict/snippets/text.js"></script>
+
+    <script src="~/node_modules/devextreme/dist/js/dx.all.js"></script>
+    <script src="~/node_modules/@@devexpress/analytics-core/dist/js/dx-analytics-core.min.js"></script>
+    <script src="~/node_modules/@@devexpress/analytics-core/dist/js/dx-querybuilder.min.js"></script>
+    <script src="~/node_modules/devexpress-reporting/dist/js/dx-webdocumentviewer.min.js"></script>
+    <script src="~/node_modules/devexpress-reporting/dist/js/dx-reportdesigner.min.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">AspNetCoreWizardCustomization</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid body-content">
+
+        @RenderBody()
+    </div>
+</body>
+</html>

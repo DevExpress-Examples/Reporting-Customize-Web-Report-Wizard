@@ -1,0 +1,24 @@
+@model MvcWizardCustomization.Models.ReportDesignerModel
+
+<!--region HideReportTypes-->
+<script type="text/javascript">
+    function beforePageInit(args) {
+        if (args.pageId === DevExpress.Reporting.Designer.Wizard.FullscreenReportWizardPageId.SelectReportTypePage) {
+            args.page.typeItems.splice(0, 1);
+            args.page.typeItems.pop();
+        }
+    }
+
+    function CustomizeWizard(s, e) {
+        if (e.Type === "ReportWizard") {
+            e.Wizard.events.addHandler("beforePageInitialize", beforePageInit)
+        }
+    }
+</script>
+
+@Html.DevExpress().ReportDesigner(settings => {
+    settings.Name = "ReportDesigner4";
+    settings.DataSources.Add(Model.DataSource.Key, Model.DataSource.Value);
+    settings.ClientSideEvents.CustomizeWizard = "CustomizeWizard";
+}).Bind(Model.Report).GetHtml()
+<!--endregion HideReportTypes-->

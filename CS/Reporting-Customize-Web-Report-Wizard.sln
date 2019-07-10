@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWizardCustomization", "Reporting-Customize-Web-Report-Wizard\AspNetCoreWizardCustomization\AspNetCoreWizardCustomization.csproj", "{267AF4AA-DA61-4EA6-A38E-D2D2629A8462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWizardCustomization", "Reporting-Customize-Web-Report-Wizard\MvcWizardCustomization\MvcWizardCustomization.csproj", "{44058B14-6690-4826-89CC-B31D372C35A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsWizardCustomization", "Reporting-Customize-Web-Report-Wizard\WebFormsWizardCustomization\WebFormsWizardCustomization.csproj", "{8861F825-EDB7-49E1-9586-4A433E949706}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{267AF4AA-DA61-4EA6-A38E-D2D2629A8462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267AF4AA-DA61-4EA6-A38E-D2D2629A8462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267AF4AA-DA61-4EA6-A38E-D2D2629A8462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267AF4AA-DA61-4EA6-A38E-D2D2629A8462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44058B14-6690-4826-89CC-B31D372C35A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44058B14-6690-4826-89CC-B31D372C35A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44058B14-6690-4826-89CC-B31D372C35A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44058B14-6690-4826-89CC-B31D372C35A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8861F825-EDB7-49E1-9586-4A433E949706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8861F825-EDB7-49E1-9586-4A433E949706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8861F825-EDB7-49E1-9586-4A433E949706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8861F825-EDB7-49E1-9586-4A433E949706}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5758DE25-4532-4D4D-8BF8-708C65AF6C73}
+	EndGlobalSection
+EndGlobal
