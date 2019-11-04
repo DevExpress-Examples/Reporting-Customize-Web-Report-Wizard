@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using DevExpress.AspNetCore;
 using DevExpress.AspNetCore.Reporting;
 using DevExpress.DataAccess;
+using AspNetCoreWizardCustomization.Services;
 
 namespace AspNetCoreWizardCustomization {
     public class Startup {
@@ -24,13 +25,20 @@ namespace AspNetCoreWizardCustomization {
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
             services.AddDevExpressControls();
+            services.AddSingleton<CustomConfigurationProvider, CustomConfigurationProvider>();
+            services.AddSingleton<CustomConfigFileDataConnectionProviderService, CustomConfigFileDataConnectionProviderService>();
             services
                 .AddMvc()
                 .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
             services.ConfigureReportingServices(configurator => {
                 configurator.ConfigureReportDesigner(designerConfigurator => {
                     designerConfigurator.RegisterDataSourceWizardConfigurationConnectionStringsProvider(configurationProvider.GetSqlConnectionStrings(), configurationProvider.GetJsonConnectionStrings());
-                }); 
+                });
+                configurator.ConfigureWebDocumentViewer(viewerConfigurator => {
+                    viewerConfigurator.RegisterConnectionProviderFactory<CustomConnectionProviderFactory>();
+                    viewerConfigurator.RegisterJsonDataConnectionProviderFactory<CustomConnectionProviderFactory>();
+                    viewerConfigurator.UseCachedReportSourceBuilder();
+                });
             });
         }
 
