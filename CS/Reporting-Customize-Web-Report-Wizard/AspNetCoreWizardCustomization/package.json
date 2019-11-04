@@ -5,9 +5,9 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "devextreme": "19.1-next",
-    "@devexpress/analytics-core": "19.1-next",
-    "devexpress-reporting": "19.1-next",
+    "devextreme": "19.2-next",
+    "@devexpress/analytics-core": "19.2-next",
+    "devexpress-reporting": "19.2-next",
     "jquery-ui-dist": "^1.12.1"
   }
 }

@@ -15,7 +15,7 @@
     <None Include="Reports\Report.repx" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="19.1.5-pre-19185" />
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="19.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.109.2" />
   </ItemGroup>
