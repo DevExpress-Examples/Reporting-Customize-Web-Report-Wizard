@@ -1,0 +1,32 @@
+@model MvcWizardCustomization.Models.ReportDesignerModel
+
+<!--region CustomizeColorSchemes-->
+<script type="text/javascript">
+    function beforeSectionInit(args) {
+        if (args.sectionId === DevExpress.Reporting.Designer.Wizard.FullscreenReportWizardSectionId.ConfigurePageSettingsPage) {
+            // Removes specific color schemes and the capability to specify a custom scheme.
+            args.section.removeColorScheme("Grey", "Jeans Blue", "Light Green", "Custom");
+            // Uncomment this line to remove all color schemes.
+            // args.section.removeAllColorSchemes();
+            args.section.addColorScheme("My Color", "255, 96, 110, 246");
+        }
+    }
+    function beforePageInit(args) {
+        if (args.pageId === DevExpress.Reporting.Designer.Wizard.FullscreenReportWizardPageId.SpecifyPageSettingsPage) {
+            args.page.events.addHandler("beforeSectionInitialize", beforeSectionInit);
+        }
+    }
+
+    function CustomizeWizard(s, e) {
+        if (e.Type === "ReportWizard") {
+            e.Wizard.events.addHandler("beforePageInitialize", beforePageInit)
+        }
+    }
+</script>
+
+@Html.DevExpress().ReportDesigner(settings => {
+    settings.Name = "ReportDesigner7";
+    settings.DataSources.Add(Model.DataSource.Key, Model.DataSource.Value);
+    settings.ClientSideEvents.CustomizeWizard = "CustomizeWizard";
+}).Bind(Model.Report).GetHtml()
+<!--region CustomizeColorSchemes-->

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWizardCustomization", "Reporting-Customize-Web-Report-Wizard\AspNetCoreWizardCustomization\AspNetCoreWizardCustomization.csproj", "{4D1A540D-F5BB-436C-8EBD-D6814A5A6ECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWizardCustomization", "AspNetCoreWizardCustomization\AspNetCoreWizardCustomization.csproj", "{1965AB81-8333-4649-8895-225DDE43B87D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWizardCustomization", "Reporting-Customize-Web-Report-Wizard\MvcWizardCustomization\MvcWizardCustomization.csproj", "{44058B14-6690-4826-89CC-B31D372C35A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWizardCustomization", "MvcWizardCustomization\MvcWizardCustomization.csproj", "{44058B14-6690-4826-89CC-B31D372C35A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsWizardCustomization", "Reporting-Customize-Web-Report-Wizard\WebFormsWizardCustomization\WebFormsWizardCustomization.csproj", "{8861F825-EDB7-49E1-9586-4A433E949706}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsWizardCustomization", "WebFormsWizardCustomization\WebFormsWizardCustomization.csproj", "{8861F825-EDB7-49E1-9586-4A433E949706}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D1A540D-F5BB-436C-8EBD-D6814A5A6ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D1A540D-F5BB-436C-8EBD-D6814A5A6ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D1A540D-F5BB-436C-8EBD-D6814A5A6ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D1A540D-F5BB-436C-8EBD-D6814A5A6ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1965AB81-8333-4649-8895-225DDE43B87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1965AB81-8333-4649-8895-225DDE43B87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1965AB81-8333-4649-8895-225DDE43B87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1965AB81-8333-4649-8895-225DDE43B87D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -32,6 +32,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D75C0D10-DA11-41B2-B2D0-5BBDA428E04D}
+		SolutionGuid = {121C7AEA-1358-49CB-9AD4-E66B7F5971E7}
 	EndGlobalSection
 EndGlobal
