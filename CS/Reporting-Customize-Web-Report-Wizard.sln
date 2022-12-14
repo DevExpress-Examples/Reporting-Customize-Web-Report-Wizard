@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWizardCustomization", "AspNetCoreWizardCustomization\AspNetCoreWizardCustomization.csproj", "{FCD93C75-488F-4659-A4CB-3D72BE296DCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWizardCustomization", "AspNetCoreWizardCustomization\AspNetCoreWizardCustomization.csproj", "{4A891D82-1F09-4014-B361-CC28B173528A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWizardCustomization", "MvcWizardCustomization\MvcWizardCustomization.csproj", "{44058B14-6690-4826-89CC-B31D372C35A2}"
 EndProject
@@ -15,10 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FCD93C75-488F-4659-A4CB-3D72BE296DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCD93C75-488F-4659-A4CB-3D72BE296DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCD93C75-488F-4659-A4CB-3D72BE296DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCD93C75-488F-4659-A4CB-3D72BE296DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A891D82-1F09-4014-B361-CC28B173528A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A891D82-1F09-4014-B361-CC28B173528A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A891D82-1F09-4014-B361-CC28B173528A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A891D82-1F09-4014-B361-CC28B173528A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -32,6 +32,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B4922FE3-6B26-4137-AFB7-FA817E1D2FD4}
+		SolutionGuid = {7EA69C53-470D-4B3B-8A70-DEA7D831123D}
 	EndGlobalSection
 EndGlobal
