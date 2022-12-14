@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWizardCustomization", "AspNetCoreWizardCustomization\AspNetCoreWizardCustomization.csproj", "{1965AB81-8333-4649-8895-225DDE43B87D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWizardCustomization", "AspNetCoreWizardCustomization\AspNetCoreWizardCustomization.csproj", "{FCD93C75-488F-4659-A4CB-3D72BE296DCF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWizardCustomization", "MvcWizardCustomization\MvcWizardCustomization.csproj", "{44058B14-6690-4826-89CC-B31D372C35A2}"
 EndProject
@@ -15,10 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1965AB81-8333-4649-8895-225DDE43B87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1965AB81-8333-4649-8895-225DDE43B87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1965AB81-8333-4649-8895-225DDE43B87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1965AB81-8333-4649-8895-225DDE43B87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD93C75-488F-4659-A4CB-3D72BE296DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD93C75-488F-4659-A4CB-3D72BE296DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD93C75-488F-4659-A4CB-3D72BE296DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD93C75-488F-4659-A4CB-3D72BE296DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44058B14-6690-4826-89CC-B31D372C35A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -32,6 +32,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {121C7AEA-1358-49CB-9AD4-E66B7F5971E7}
+		SolutionGuid = {B4922FE3-6B26-4137-AFB7-FA817E1D2FD4}
 	EndGlobalSection
 EndGlobal
