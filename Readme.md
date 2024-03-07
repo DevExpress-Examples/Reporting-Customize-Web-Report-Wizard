@@ -12,7 +12,7 @@ See the following project folders depending on the platform:
 
 - [ASP.NET Core](/CS/AspNetCoreWizardCustomization/)
 - [ASP.NET MVC](/CS/MvcWizardCustomization/)
-- [ASP.NET WebForms](/CS/WebFormsWizardCustomization)
+- [ASP.NET Web Forms](/CS/WebFormsWizardCustomization)
 
 ## Documentation
 
